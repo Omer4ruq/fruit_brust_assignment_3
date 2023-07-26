@@ -26,6 +26,18 @@
       crossorigin="anonymous"
     ></script>
 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundimages: {
+              "hero-bg": "url('./images/team')",
+            },
+          },
+        },
+      };
+    </script>
+
     <style>
       .font-loto {
         font-family: "Lato", sans-serif;
@@ -38,7 +50,7 @@
   </head>
   <body>
     <header>
-      <nav class="pt-10">
+      <nav class="pt-10 pb-10 max-w-screen-xl mx-auto">
         <!-- first -->
         <div class="navbar bg-base-100 bg-[#F85559;] rounded-[600px]">
           <div class="lg:flex navbar-start">
@@ -107,44 +119,169 @@
       </nav>
 
       <!-- slider -->
-      <div class="carousel w-full">
-        <div id="slide1" class="carousel-item relative w-full">
-          <img src="/images/banner1.png" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide4" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
+      <section class="max-w-screen-xl mx-auto relative">
+        <div class="carousel w-ful bg-sky-500/75">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="/images/banner1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/images/banner2.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="/images/banner3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="/images/banner4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
           </div>
         </div>
-        <div id="slide2" class="carousel-item relative w-full">
-          <img src="/images/banner2.png" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide1" class="btn btn-circle">❮</a>
-            <a href="#slide3" class="btn btn-circle">❯</a>
+
+        <div class="absolute top-8 right-10 left-6">
+          <!-- <div class="hero-overlay bg-opacity-60"></div> -->
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+              <p class="mb-5">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
           </div>
         </div>
-        <div id="slide3" class="carousel-item relative w-full">
-          <img src="/images/banner3.png" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide4" class="btn btn-circle">❯</a>
+      </section>
+      <!-- slider end-->
+      <!-- countdown -->
+      <section class="max-w-screen-xl mx-auto relative flex p-20">
+        <div class="flex-1">
+          <h3 class="text-5xl font-extrabold text-black">Deal of the day</h3>
+          <p class="text-sm mt-5">
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
+        </div>
+        <div class="flex-1 pl-[400px] pt-4">
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div
+              class="flex flex-col p-2 rounded-box text-black text-neutral-content"
+            >
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 15"></span>
+              </span>
+              days
+            </div>
+            <div
+              class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content"
+            >
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 10"></span>
+              </span>
+              hours
+            </div>
+            <div
+              class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content"
+            >
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 24"></span>
+              </span>
+              min
+            </div>
+            <div
+              class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content"
+            >
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 24"></span>
+              </span>
+              sec
+            </div>
           </div>
         </div>
-        <div id="slide4" class="carousel-item relative w-full">
-          <img src="/images/banner4.png" class="w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide3" class="btn btn-circle">❮</a>
-            <a href="#slide1" class="btn btn-circle">❯</a>
+      </section>
+      <!-- countdown end-->
+
+      <!-- banner -->
+      <section class="max-w-screen-xl mx-auto">
+        <div
+          class="hero min-h-[690px]"
+          style="background-image: url(./images/team.png)"
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content -mt-72">
+            <div class="max-w-[600px]">
+              <h1 class="mb-5 text-5xl font-extrabold">
+                Meet the team section
+              </h1>
+              <p class="mb-5 text-sm">
+                Contrary to popular belief, is not simply random text. It has
+                roots in a piece of classical Latin literature from 45 BC,
+                making it over 2000 years old.
+              </p>
+              <!-- <button class="btn btn-primary">Get Started</button> -->
+            </div>
+          </div>
+          <div class="flex gap-[140px] mt-20 text-center text-white">
+            <div>
+              <img class="" src="images/member1.png" alt="" />
+              <h1 class="text-lg font-bold">Awlad Hossain</h1>
+              <p class="text-sm font-semibold">Fruits Expert</p>
+              <i class="fa-brands fa-facebook text-[#F85559]"></i>
+              <i class="fa-brands fa-twitter text-[#F85559]"></i>
+              <i class="fa-brands fa-linkedin text-[#F85559]"></i>
+            </div>
+            <div>
+              <img class="" src="images/member2.png" alt="" />
+              <h1 class="text-lg font-bold">Safia Chowdhury</h1>
+              <p class="text-sm font-semibold">Fruits Expert</p>
+              <i class="fa-brands fa-facebook text-[#F85559]"></i>
+              <i class="fa-brands fa-twitter text-[#F85559]"></i>
+              <i class="fa-brands fa-linkedin text-[#F85559]"></i>
+            </div>
+            <div>
+              <img class="" src="images/member3.png" alt="" />
+              <h1 class="text-lg font-bold">Rokib Hossain</h1>
+              <p class="text-sm font-semibold">Fruits Expert</p>
+              <i class="fa-brands fa-facebook text-[#F85559]"></i>
+              <i class="fa-brands fa-twitter text-[#F85559]"></i>
+              <i class="fa-brands fa-linkedin text-[#F85559]"></i>
+            </div>
+            <div>
+              <img class="" src="images/member4.png" alt="" />
+              <h1 class="text-lg font-bold">Chaity</h1>
+              <p class="text-sm font-semibold">Fruits Expert</p>
+              <i class="fa-brands fa-facebook text-[#F85559]"></i>
+              <i class="fa-brands fa-twitter text-[#F85559]"></i>
+              <i class="fa-brands fa-linkedin text-[#F85559]"></i>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- banner End-->
     </header>
   </body>
 </html>
