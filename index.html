@@ -3,7 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- font-loto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script
+      src="https://kit.fontawesome.com/af9c586007.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .font-loto {
+        font-family: "Lato", sans-serif;
+        font-family: "Manrope", sans-serif;
+        font-family: "Work Sans", sans-serif;
+      }
+    </style>
+
     <title>Fruit Brust</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="pt-10">
+        <!-- first -->
+        <div class="navbar bg-base-100 bg-[#F85559;] rounded-[600px]">
+          <div class="lg:flex navbar-start">
+            <ul class="menu menu-horizontal px-1 w-[400px]">
+              <li><a class="text-white text-lg font-medium">Home</a></li>
+
+              <li><a class="text-white text-lg font-medium">About Us</a></li>
+              <li><a class="text-white text-lg font-medium">Shop</a></li>
+              <li><a class="text-white text-lg font-medium">All Fruits</a></li>
+            </ul>
+          </div>
+
+          <div class="navbar-center pr-20">
+            <div class="flex">
+              <img src="images/logo.png" alt="" />
+              <a
+                class="btn btn-ghost normal-case navbar-center text-5xl font-bold text-white"
+                >Fruit Burst</a
+              >
+            </div>
+          </div>
+
+          <div class="flex-none gap-2 pr-10 relative">
+            <div class="form-control lg:w-[400px] rounded-3xl navbar-end">
+              <input
+                type="text"
+                placeholder="Search"
+                class="input input-bordered w-24 md:w-auto"
+              />
+            </div>
+            <button class="absolute right-9">
+              <i class="fa-solid fa-magnifying-glass pr-5"></i>
+            </button>
+            <!-- <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full">
+                  <img
+                    src="/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                  />
+                </div>
+              </label>
+              <ul
+                tabindex="0"
+                class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <a class="justify-between">
+                    Profile
+                    <span class="badge">New</span>
+                  </a>
+                </li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+        <!-- first end -->
+
+        <!-- second -->
+
+        <!-- second end -->
+        <!-- third -->
+
+        <!-- third End -->
+      </nav>
+
+      <!-- slider -->
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="/images/banner1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="/images/banner2.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="/images/banner3.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="/images/banner4.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
